@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+
+#navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    /* display:flex is used to bring everything in same line row vise */
+    display: flex;
+    align-items: center;
+    /* space evenly issi liye diya kyuki pahle poora space lega equal distance pe jabb extra chhez add karege toh left me move karega */
+    justify-content: space-evenly;
+}
+/* box-1 */
+#nav-logo{
+    height: 50px;
+    width: 150px;
+}
+#logo{
+    background-image: url(Amazon-Logo.png);
+    background-size: cover;
+    height: 50px;
+    width: 150px;
+    
+}
+#border{
+    border: 3px solid transparent;
+}
+#border:hover{
+    border: 3px solid white;
+}
+
+/* box-2 */
+#add-first{
+    margin-left: 15px;
+    color: #cccccc;
+    font-size: 0.85rem;
+}
+#add-sec{
+    color: white;
+    margin-left: 3px;
+}
+#add-icon{
+    /* icon and India came to same line using flex */
+    display: flex;
+    align-items: center;
+}
+
+/* box-3 */
+#nav-search{
+    display: flex;
+    background-color: #FF9F1C;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+}
+#search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+#search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+#search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+/* box-4 */
+span{
+    font-size: 0.7rem;
+}
+#nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* box-5 */
+#nav-cart i{
+    font-size: 35px;
+}
+#nav-cart{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* pannel */
+#panel{
+    height: 35px;
+    background-color: #00273e;
+    color: white;
+    display: flex;
+}
+/* margine give sapce from top right bottom left */
+#panel-all{
+    display: flex;
+    font-weight: 500;
+    margin: 10px 20px 15px 25px;
+}
+/* gap is used give space btw many paragparhs when in same line */
+#panel-other{
+    display: flex;
+    gap: 1rem;
+    margin: 10px 20px 15px 4px;
+}
+
+
+/* bgimage */
+#bgimage{
+    background-image: url(4.jpg);
+    /* bg-size:cover is used fit big image in screen*/
+    background-size: cover;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#bgmessage{
+    background-color: white;
+    color: black;
+    height: 40px;
+    width: 80%;
+    display: flex;
+    /* vertically brings at center */
+    align-items: center;
+    /* horizontally brings at center */
+    justify-content: center;
+    font-size: 0.85rem;
+    margin-bottom: 70px;
+}
+/* giving color to ANCHOR tag present inside mesage */
+#bgmessage a{
+    color: #007185;
+}
+
+
+/* shopping section   boxes */
+#shop-section{
+    /* to bring all four boxes in same line, do display flex */
+    display: flex;
+    /* to give same space btw all 4 boxes */
+    justify-content: space-evenly;
+    /* maximum 4 box should be there in one row, other 4 boxes at second row */
+    flex-wrap: wrap;
+    background-color: #e2e7e6;
+}
+.box{
+    height: 400px;
+    width: 22%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+}
+.box-img{
+    height: 330px;
+    margin: 15px;
+    background-size: cover;
+}
+.box h2{
+    margin-left: 13px;
+}
+.box p{
+    margin-left: 13px;
+    color: #007185;
+}
+
+
+/* Footer part */
+footer{
+    margin-top: 15px;
+}
+
+.foot-panel1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    /* justify and align are used to change position horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul{
+    margin-top: 35px;
+
+}
+
+ul a{
+    /* it brings all unorderlist in same line vertically and to make them in three parts display:flex in parent mode */
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+.foot-panel3{
+    background-color: #37475a;
+    color: white;
+    border-top: 0.5px solid white;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    background-image: url("logo.png");
+    background-size: cover;
+    height: 65px;
+    width: 200px;
+}
+
+.foot-panel4{
+    background-color: #0f1111;
+    color: white;
+    height: 90px;
+    font-size: 0.7rem;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.pages{
+    padding-top: 25px;
+}
+
+.copywrite{
+    padding-top: 5px;
+}
